@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #ffffff;
+  color: $secondary-text-coloure;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  margin: 0px;
+}
+ul {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.title--hidden {
+  display: none;
+}

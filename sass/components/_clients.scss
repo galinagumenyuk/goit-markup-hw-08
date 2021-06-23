@@ -1,0 +1,30 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__icon {
+  fill: #afb1b8;
+
+  transition: fill 250ms $transition-timing-function;
+
+  .clients__border:hover &,
+  .clients__border:focus & {
+    fill: $accent-coloure;
+  }
+}
+
+.clients__border {
+  display: block;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  transition: border-color 250ms $transition-timing-function;
+
+  &:focus,
+  &:hover {
+    border-color: $accent-coloure;
+  }
+}

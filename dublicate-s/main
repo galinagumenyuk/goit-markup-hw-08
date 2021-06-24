@@ -1,6 +1,5 @@
 @import "./utils/variables";
 @import "./utils/common";
-@import "./utils/breakpoints";
 @import "./components/header";
 @import "./components/section-title";
 @import "./components/hero";

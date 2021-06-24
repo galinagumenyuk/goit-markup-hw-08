@@ -1,8 +1,8 @@
 .clients {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .clients__icon {
   fill: #afb1b8;
 
@@ -16,16 +16,10 @@
 
 .clients__border {
   display: block;
-  width: 210px;
-  height: 92px;
-  padding-top: 16px;
-  padding-left: 52px;
-  padding-right: 52px;
-  padding-bottom: 16px;
-
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
 
   transition: border-color 250ms $transition-timing-function;
 
@@ -33,6 +27,4 @@
   &:hover {
     border-color: $accent-coloure;
   }
-
-  margin-top: 30px;
 }

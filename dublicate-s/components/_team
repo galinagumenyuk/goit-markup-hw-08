@@ -1,17 +1,18 @@
 .team {
   background-color: #f5f4fa;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+}
+
+.card-set {
+  display: flex;
+}
+
+.card-set__item + .card-set__item {
+  margin-left: 30px;
 }
 .card-set__img {
   margin-top: 0px;
 }
 
-.card-set__item {
-  margin-top: 30px;
-}
 .card-set__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;

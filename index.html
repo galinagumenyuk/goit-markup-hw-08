@@ -20,6 +20,18 @@
     <div class="container header__container">
         <nav class="nav">
         <a href="" class="logo">Web<span class="logo--accent">Studio</span> </a>
+        <button type="button" class="menu-toggle is-open js-open-menu"  aria-expanded="false" aria-controls="menu-container" > 
+            <svg width="40" height="40" aria-label="переключатель мобильного меню"> 
+            <use class="menu-toggle__icon-menu" href="./images/icons/symbol-defs.svg#icon-icon-nav"></use> 
+            </svg> 
+        </button>
+        <div class="menu-container js-menu-container" id="menu-container" >
+            <svg width="40" height="40">
+                <use class="menu-toggle__icon-cross js-close-menu" href="./images/icons/symbol-defs.svg#icon-cross"></use>
+            </svg>
+            текст
+            текст
+        </div>
         <ul class="nav__list">
             <li class="nav__item"><a href="" class="nav__link nav__link--current">Студия</a></li>
             <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
@@ -248,6 +260,7 @@
 <!--Подвал-->
 <footer class="footer" id="contacts">
     <div class="container footer__container">
+    <div class="tablet-wrapper">
     <div>
         <a href="" class="logo footer__logo">Web<span class="logo--accent footer__logo--accent">Studio</span></a>
         <address>
@@ -284,7 +297,7 @@
         </li>
     </ul>
     </div>
-
+    </div>
 <div>
     <p class="footer__text">подпишитесь на рассылку</p>
     <div>
@@ -354,5 +367,9 @@
 
 <!--Скрипт-->
 <script src="./js/modal.js"></script>
+<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script> -->
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

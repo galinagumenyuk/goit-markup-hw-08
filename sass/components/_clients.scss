@@ -20,7 +20,14 @@
 
 .clients__border {
   display: block;
-  width: 210px;
+  // width: 210px;
+  width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
   height: 92px;
   padding-top: 16px;
   padding-left: 52px;

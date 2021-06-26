@@ -5,12 +5,33 @@
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
+.card-set {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .card-set__img {
   margin-top: 0px;
 }
 
 .card-set__item {
   margin-top: 30px;
+
+  @media screen and(min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
 }
 .card-set__wrapper {
   padding-top: 30px;

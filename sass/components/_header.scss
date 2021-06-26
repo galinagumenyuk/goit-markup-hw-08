@@ -10,6 +10,9 @@
     display: flex;
     align-items: center;
   }
+  @media screen and(min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -130,13 +133,22 @@
 }
 .contact-info {
   margin-left: auto;
+
   @media screen and(max-width: 767px) {
     display: none;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
   }
 }
 
 .contact-info__item + .contact-info__item {
   margin-top: 10px;
+  @media screen and(min-width: 1200px) {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
 }
 
 .contact-info__link {

@@ -1,9 +1,11 @@
 .header__container {
-  width: 480px;
   height: 60px;
   left: 0px;
   top: 0px;
   background-color: #ffffff;
+  @media screen and(min-width: 480px) {
+    width: 480px;
+  }
   @media screen and(min-width: 768px) {
     width: 768px;
     height: 80px;
@@ -51,8 +53,8 @@
 
 .menu-toggle {
   display: inline-flex;
-  margin: 0px;
-  padding: 0px;
+  margin: 0 10 0 0;
+  padding: 0;
   border: none;
   background-color: transparent;
   @media screen and(min-width: 768px) {
@@ -80,6 +82,9 @@
 
   &.is-open {
     transform: translateX(0);
+  }
+  @media screen and(min-width: 768px) {
+    display: none;
   }
 }
 .nav__list {
@@ -165,6 +170,10 @@
   &:hover,
   &:focus {
     color: $accent-coloure;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
   }
 }
 

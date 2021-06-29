@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/components/-mob-menu.scss"
+    ],
+    "names": [],
+    "file": "-mob-menu.min.css"
+}

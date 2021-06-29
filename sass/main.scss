@@ -1,6 +1,5 @@
 @import "./utils/variables";
 @import "./utils/common";
-@import "./utils/breakpoints";
 @import "./components/header";
 @import "./components/section-title";
 @import "./components/hero";
@@ -11,3 +10,4 @@
 @import "./components/footer";
 @import "./components/modal";
 @import "./components/portfolio-page";
+@import "./components/-mob-menu.scss";
